@@ -5,11 +5,17 @@
 footer {
 	color: white;
 }
+h1, h2, h3, h4, h5 {
+	font-weight: normal;
+}
+
+#footerTop, #footerBottom {
+	padding: 1em 0.5em;
+}
 #footerTop {
 	background-color: #1a1a1a;
 	border-bottom: 4px solid #202020;
 	padding-top: 2em;
-	padding-bottom: 1em;
 }
 #footerTop img {
 	padding: 1em 0;
@@ -39,8 +45,16 @@ header.fixed {
 }
 
 
+button {
+	width: 100%;
+}
+
 article {
 	padding: 0 0.5em;
+	margin: 2em auto;
+}
+article.fullWidth {
+	padding: 0;
 }
 #logo {
 	text-align: center;
@@ -57,7 +71,7 @@ article {
 }
 #mainMenu .pure-menu-link {
 	white-space: normal;
-	padding: 1em 0.4em;
+	padding: 0.7em 0.4em;
 }
 #mainMenu .pure-menu-link:hover {
 	color: #dc233c;
@@ -68,40 +82,32 @@ article {
 	width: 100%;
 }
 
-#valeurs {
-	padding: 0 0.5em }
-#valeurs .pure-u-2-3 > * {
-	vertical-align: middle;
-}
-#valeurs .pure-u-1-3 {
-	text-align: center;
-}
-#valeurs .pure-u-2-3 p {
-	padding-left: 0.5em;
-}
-#valeurs .pure-u-2-3 header {
-	color: #dc233c;
-	font-size: 125%;
-	padding-left: 0.5em;
-}
-#valeurs > header {
-	font-size: 175%;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 2em 0;
-}
-button {
-	width: 100%;
+#joinUs header {
+	margin: 1em 0;
 }
 
-#joinUs {
-	padding: 0 0.5em;
+.iconsWithDesc header {
+	text-align: center;
+	text-transform: uppercase;
 }
-#joinUs header {
+.iconsWithDesc ul {
+	padding-left: 0;
+}
+.iconsWithDesc li {
+	background: none no-repeat;
+	min-height: 100px;
+}
+.iconsWithDesc h3 {
+	margin-top: 0;
+}
+.iconsWithDesc h3, .iconsWithDesc p {
+	margin-left: 120px;
+}
+
+.redTitle {
 	color: #dc233c;
-	margin: 1em 0;
-	font-size: 125%;
 }
+
 
 /****************************/
 /* OVERRIDES/ADDITIONS PURE */
@@ -114,13 +120,23 @@ button {
 	padding: 0;
 }
 
-.small {
-	font-size: 85%;
-}
 
 .xsmall {
 	font-size: 75%;
 }
+.small {
+	font-size: 85%;
+}
+.large {
+	font-size: 125%;
+}
+.xlarge {
+	font-size: 150%;
+}
+.xxlarge {
+	font-size: 175%;
+}
+
 
 /****************/
 /* SLIDER JSSOR */

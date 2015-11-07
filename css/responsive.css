@@ -9,11 +9,13 @@
 	}
 
 	article {
-		margin: auto;
 		width: 80%;
 	}
+	article.fullWidth {
+		padding: 0 0.5em;
+	}
 
-	.pure-menu-heading {
+	#mainMenu .pure-menu-heading {
 		padding: 0.5em 1em;
 	}
 
@@ -21,9 +23,8 @@
 		text-align: left;
 		vertical-align: middle;
 	}
-
 	#mainMenu .pure-menu-link {
-		/*padding: 0.8em 1em;*/
+		padding: 0.8em 1em;
 		text-align: left;
 	}
 
@@ -33,6 +34,9 @@
 	#logo {
 		display: inline-block;
 		width: auto;
+	}
+	.iconsWithDesc p {
+		margin-right: 1em;
 	}
 }
 
