@@ -1,0 +1,51 @@
+/* pure-u-sm (mobile > 568px)  */
+@media screen and (min-width: 48em) {
+}
+
+/* pure-u-md (tablette > 768px) */
+@media screen and (min-width: 48em) {
+	#headerContainer, #footerTop, #footerBottom {
+		padding: 0 10%;
+	}
+
+	article {
+		margin: auto;
+		width: 80%;
+	}
+
+	.pure-menu-heading {
+		padding: 0.5em 1em;
+	}
+
+	#mainMenu .pure-menu-list {
+		text-align: left;
+		vertical-align: middle;
+	}
+
+	#mainMenu .pure-menu-link {
+		/*padding: 0.8em 1em;*/
+		text-align: left;
+	}
+
+	header.fixed #logo {
+		display: inline-block;
+	}
+	#logo {
+		display: inline-block;
+		width: auto;
+	}
+}
+
+/* pure-u-lg (desktop > 1024px) */
+@media screen and (min-width: 64em) {
+	.slider {
+		width: 80%;
+	}
+}
+
+/* pure-u-xl (desktop > 1280px) */
+@media screen and (min-width: 80em) {
+	html {
+		font-size: 14pt;
+	}
+}
