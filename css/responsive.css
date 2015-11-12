@@ -4,10 +4,6 @@
 
 /* pure-u-md (tablette > 768px) */
 @media screen and (min-width: 48em) {
-	#headerContainer, #footerTop, #footerBottom {
-		margin: auto;
-		padding: 0 10%;
-	}
 	header.fixed {
 		background-color: white;
 		border-bottom: 2px solid red;
@@ -28,13 +24,19 @@
 		padding: 0 0.5em;
 	}
 
+	#mainMenu {
+		text-align: left;
+	}
 	#mainMenu .pure-menu-heading {
-		padding: 0.5em 1em;
+		padding: 0.3em 1em 0.3em 0;
 	}
 
 	#mainMenu .pure-menu-list {
-		text-align: left;
 		vertical-align: middle;
+	}
+	#mainMenu .pure-menu-link {
+		width: 100px;
+		text-align: center;
 	}
 
 	header.fixed #logo {
@@ -51,12 +53,15 @@
 
 /* pure-u-lg (desktop > 1024px) */
 @media screen and (min-width: 64em) {
+	#headerContainer, #footerTop, #footerBottom {
+		margin: auto;
+		padding: 0 10%;
+	}
 	.slider {
 		width: 80%;
 	}
 	#mainMenu .pure-menu-link {
 		padding: 0.8em 1em;
-		text-align: left;
 	}
 }
 
@@ -64,5 +69,12 @@
 @media screen and (min-width: 80em) {
 	html {
 		font-size: 14pt;
+	}
+	#mainMenu .pure-menu-link {
+		width: auto;
+		text-align: center;
+	}
+	#mainMenu .pure-menu-link {
+		padding: 0.8em 0.8em;
 	}
 }

@@ -35,17 +35,20 @@ article.fullWidth {
 	display: block;
 	width: 100%;
 }
+#mainMenu {
+	text-align: center;
+}
 #mainMenu .pure-menu-list {
 	text-align: center;
 	vertical-align: bottom;
-}
-#mainMenu {
+	white-space: normal;
 }
 #mainMenu .pure-menu-item {
 	vertical-align: middle;
 }
 #mainMenu .pure-menu-link {
 	padding: 0.7em 0.4em;
+	white-space: normal;
 }
 #mainMenu .pure-menu-link:hover {
 	color: #dc233c;
@@ -58,6 +61,9 @@ article.fullWidth {
 
 #joinUs header {
 	margin: 1em 0;
+}
+#joinUs input {
+	margin-bottom: 0.5em;
 }
 .right-caret:before {
 	content: "\25BA\0020";
