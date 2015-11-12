@@ -5,7 +5,20 @@
 /* pure-u-md (tablette > 768px) */
 @media screen and (min-width: 48em) {
 	#headerContainer, #footerTop, #footerBottom {
+		margin: auto;
 		padding: 0 10%;
+	}
+	header.fixed {
+		background-color: white;
+		border-bottom: 2px solid red;
+		box-shadow: 10px 0px 15px RGBA(0,0,0,0.15),
+		-10px 0px 15px RGBA(0,0,0,0.15),
+		0px 6px 10px 0px RGBA(0,0,0,0.15);
+		margin: 0;
+		opacity: 0.98;
+		position: fixed;
+		top: 0;
+		width: 100%;
 	}
 
 	article {
@@ -22,10 +35,6 @@
 	#mainMenu .pure-menu-list {
 		text-align: left;
 		vertical-align: middle;
-	}
-	#mainMenu .pure-menu-link {
-		padding: 0.8em 1em;
-		text-align: left;
 	}
 
 	header.fixed #logo {
@@ -44,6 +53,10 @@
 @media screen and (min-width: 64em) {
 	.slider {
 		width: 80%;
+	}
+	#mainMenu .pure-menu-link {
+		padding: 0.8em 1em;
+		text-align: left;
 	}
 }
 

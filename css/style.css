@@ -2,48 +2,16 @@
 /* LES STYLES DESKTOP SONT A METTRE DANS responsive.css */
 /********************************************************/
 
-footer {
-	color: white;
-}
 h1, h2, h3, h4, h5 {
 	font-weight: normal;
 }
-
-#footerTop, #footerBottom {
-	padding: 1em 0.5em;
-}
-#footerTop {
-	background-color: #1a1a1a;
-	border-bottom: 4px solid #202020;
-	padding-top: 2em;
-}
-#footerTop img {
-	padding: 1em 0;
-}
-#footerBottom {
-	background-color: #121212;
+a {
+	text-decoration: none;
 }
 
 body > header {
 	z-index: 10;
 }
-
-header.fixed #logo {
-	display: none;
-}
-header.fixed {
-	background-color: white;
-	border-bottom: 2px solid red;
-	box-shadow: 10px 0px 15px RGBA(0,0,0,0.15),
-	-10px 0px 15px RGBA(0,0,0,0.15),
-	0px 6px 10px 0px RGBA(0,0,0,0.15);
-	margin: 0;
-	opacity: 0.98;
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
 
 button {
 	width: 100%;
@@ -56,21 +24,27 @@ article {
 article.fullWidth {
 	padding: 0;
 }
+
+
+/*************************/
+/* LOGO + MENU PRINCIPAL */
+/*************************/
+
 #logo {
 	text-align: center;
 	display: block;
 	width: 100%;
 }
 #mainMenu .pure-menu-list {
-	white-space: normal;
 	text-align: center;
 	vertical-align: bottom;
+}
+#mainMenu {
 }
 #mainMenu .pure-menu-item {
 	vertical-align: middle;
 }
 #mainMenu .pure-menu-link {
-	white-space: normal;
 	padding: 0.7em 0.4em;
 }
 #mainMenu .pure-menu-link:hover {
@@ -84,6 +58,43 @@ article.fullWidth {
 
 #joinUs header {
 	margin: 1em 0;
+}
+.right-caret:before {
+	content: "\25BA\0020";
+	font-size: 45%;
+	vertical-align: 0.5em;
+}
+
+#footerTop, #footerBottom {
+	padding: 1em 0.5em;
+}
+#footerTop {
+	background-color: #1a1a1a;
+	border-bottom: 4px solid #202020;
+	padding-top: 2em;
+}
+
+#footerTop {
+	color: white;
+}
+#footerTop a {
+	color: white;
+}
+#footerTop nav {
+	margin: 1em 0.5em;
+}
+#footerTop ul {
+	padding: 0;
+	list-style-type: none;
+}
+#footerTop li {
+	font-size: 80%;
+}
+#footerTop img {
+	padding: 1em 0;
+}
+#footerBottom {
+	background-color: #121212;
 }
 
 .iconsWithDesc header {
@@ -106,6 +117,9 @@ article.fullWidth {
 
 .redTitle {
 	color: #dc233c;
+}
+.listTitle {
+	text-transform: uppercase;
 }
 
 
