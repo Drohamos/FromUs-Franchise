@@ -13,7 +13,7 @@ body > header {
 	z-index: 10;
 }
 
-button {
+#joinUs button {
 	width: 100%;
 }
 
@@ -23,6 +23,10 @@ article {
 }
 article.fullWidth {
 	padding: 0;
+}
+img.fullWidth {
+	width: 100%;
+	height: auto;
 }
 
 
@@ -52,6 +56,10 @@ article.fullWidth {
 }
 #mainMenu .pure-menu-link:hover {
 	color: #dc233c;
+}
+
+#defineProjectIntro div {
+	padding: 0 0 0 1em;
 }
 
 .slider {
@@ -103,7 +111,7 @@ article.fullWidth {
 	background-color: #121212;
 }
 
-.iconsWithDesc header {
+article > header {
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -127,6 +135,9 @@ article.fullWidth {
 .listTitle {
 	text-transform: uppercase;
 }
+.noTopMargin {
+	margin-top: 0;
+}
 
 
 /****************************/
@@ -138,6 +149,13 @@ article.fullWidth {
 }
 .pure-menu-heading {
 	padding: 0;
+}
+.pure-form-aligned .pure-control-group label {
+	width: 35%;
+}
+.pure-form-aligned .pure-controls {
+	margin-left: 35%;
+	padding-left: 1.3em;
 }
 
 

@@ -14,7 +14,7 @@
 				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Qui sommes-nous ?</a></li>
 				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Devenir franchisé</a></li>
 				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Notre implantation</a></li>
-				<li class="pure-menu-item"><a href="definir-projet.php" class="pure-menu-link">Définir votre projet</a></li>
+				<li class="pure-menu-item"><a href="definir-projet.html" class="pure-menu-link">Définir votre projet</a></li>
 				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Nous contacter</a></li>
 			</ul>
 		</nav>
@@ -30,20 +30,29 @@
 		<p class="noTopMargin">Développer sa propre entreprise par le biais d’une franchise est très sécurisant et permet de se développer professionnellement. Chaque franchisé devenant un membre à part entière de l’entreprise, il nous faut mieux vous connaître. Nous avons donc mis en place un petit questionnaire concernant votre profil. Une fois vos réponses envoyés, vous recevrez un mail contenant toutes les étapes pour devenir franchisé From-US.com.</p>
 		<p><strong>Que l'aventure commence !</strong></p>
 	</section>
-	<section class="pure-u-2-5">
-		<div><img src="images/definir-projet-intro.jpg" class="pure-img" /></div>
+	<section class="pure-u-2-5" style="text-align: center">
+		<div><img src="images/definir-projet-intro.jpg" class="pure-img" style="max-width: 400px;" /></div>
 	</section>
 </article>
 
 <article class="iconsWithDesc">
+	<?php if (isset($_POST) && ($_POST)): ?>
+		<strong>Données reçues</strong><br />
+		Pays : <?php echo $_POST['pays']; ?><br />
+		Origine : <?php echo $_POST['origin']; ?><br />
+		Apport : <?php echo $_POST['apport']; ?><br />
+		Expériences : <?php echo $_POST['experiences']; ?><br />
+		Motivations : <?php echo $_POST['motivations']; ?><br />
+	<?php endif; ?>
+
 	<header><h2 class="xxlarge">Définir votre projet</h2></header>
 
-	<form class="pure-form pure-form-aligned">
+	<form class="pure-form pure-form-aligned" action="#" method="post">
 		<p><strong>Pour mieux vous connaître nous devons savoir :</strong></p>
 		<fieldset>
 			<div class="pure-control-group">
 				<label for="pays">Dans quel pays projetez-vous d'installer votre franchise ?</label>
-				<select id="pays" class="pure-input pure-u-1 pure-u-sm-1-2">
+				<select id="pays" name="pays" class="pure-input pure-u-1 pure-u-sm-1-2">
 					<option value="AF">Afghanistan</option>
 					<option value="AX">Åland Islands</option>
 					<option value="AL">Albania</option>
@@ -298,7 +307,7 @@
 
 			<div class="pure-control-group">
 				<label for="origin">Etes-vous originaire du pays ou vous souhaitez ouvrir votre franchise ?</label>
-				<select id="origin" class="pure-input pure-u-1 pure-u-sm-1-2">
+				<select id="origin" name="origin" class="pure-input pure-u-1 pure-u-sm-1-2">
 					<option value="yes">Oui</option>
 					<option value="no">Non</option>
 					<option value="3years">Non mais j'y vis depuis au moins 3 ans</option>
@@ -307,7 +316,7 @@
 
 			<div class="pure-control-group">
 				<label for="apport">Quel est le niveau d'apport dont vous disposez ?</label>
-				<select id="apport" class="pure-input pure-u-1 pure-u-sm-1-2">
+				<select id="apport" name="apport" class="pure-input pure-u-1 pure-u-sm-1-2">
 					<option value="5-10">De 5k€ à 10k€</option>
 					<option value="10-20">De 10k€ à 20k€</option>
 					<option value="20-30">De 20k€ à 30k€</option>
@@ -319,16 +328,16 @@
 
 			<div class="pure-control-group">
 				<label for="experiences">Décrivez nous en quelques phrases vos expériences professionnelles :</label>
-				<textarea id="experiences" class="pure-input pure-u-1 pure-u-sm-1-2" rows="5"></textarea>
+				<textarea id="experiences" name="experiences" class="pure-input pure-u-1 pure-u-sm-1-2" rows="5"></textarea>
 			</div>
 
 			<div class="pure-control-group">
-				<label for="motications">Quelles sont vos motivations à devenir franchisé From-US.com ?</label>
-				<textarea id="motications" class="pure-input pure-u-1 pure-u-sm-1-2" rows="5"></textarea>
+				<label for="motivations">Quelles sont vos motivations à devenir franchisé From-US.com ?</label>
+				<textarea id="motivations" name="motivations" class="pure-input pure-u-1 pure-u-sm-1-2" rows="5"></textarea>
 			</div>
 
 			<div class="pure-controls">
-				<button type="submit" class="pure-button pure-button-primary">Envoyer mon profil</button>
+				<input type="submit" value="Envoyer mon profil" class="pure-button pure-button-primary"></input>
 			</div>
 		</fieldset>
 	</form>
