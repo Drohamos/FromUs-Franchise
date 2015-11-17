@@ -21,9 +21,8 @@ article {
 	padding: 0 0.5em;
 	margin: 2em auto;
 }
-.fullWidth {
+article.fullWidth {
 	padding: 0;
-	width: 100%;
 }
 img.fullWidth {
 	width: 100%;
@@ -61,6 +60,11 @@ img.fullWidth {
 
 #defineProjectIntro div {
 	padding: 0 0 0 1em;
+}
+
+.slider {
+	margin: auto;
+	width: 100%;
 }
 
 #joinUs header {
@@ -145,6 +149,9 @@ article > header {
 }
 .pure-menu-heading {
 	padding: 0;
+}
+.pure-form-aligned .pure-control-group label {
+	width: 35%;
 }
 .pure-form-aligned .pure-controls {
 	margin-left: 35%;
