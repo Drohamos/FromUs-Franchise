@@ -147,7 +147,7 @@ article > header {
 	position: absolute;
 	width: 20%;
 	height: 1px;
-	top: 1.5em;
+	bottom: -0.5em;
 	left: 40%;
 	border-bottom: 1px solid black;
 }
