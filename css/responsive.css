@@ -20,9 +20,6 @@
 	article {
 		width: 80%;
 	}
-	article.fullWidth {
-		padding: 0 0.5em;
-	}
 
 	#mainMenu {
 		text-align: left;
@@ -62,6 +59,9 @@
 	}
 	#mainMenu .pure-menu-link {
 		padding: 0.8em 1em;
+	}
+	article.fullWidth {
+		width: 80%;
 	}
 }
 

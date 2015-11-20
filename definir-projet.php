@@ -1,41 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>From-US : Franchise - Maquette FONCTIONNELLE</title>
-</head>
-<body>
-<header>
-	<div id="headerContainer">
-		<nav id="mainMenu" class="pure-menu pure-menu-horizontal">
-			<a href="index.html" id="logo" class="pure-menu-heading"><img src="images/logo.png" alt=""></a>
-			<ul class="pure-menu-list">
-				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Qui sommes-nous ?</a></li>
-				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Devenir franchisé</a></li>
-				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Notre implantation</a></li>
-				<li class="pure-menu-item"><a href="definir-projet.html" class="pure-menu-link">Définir votre projet</a></li>
-				<li class="pure-menu-item"><a href="#" class="pure-menu-link">Nous contacter</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+<?php include('header.php'); ?>
 
 <article class="fullWidth noTopMargin">
 	<img class="fullWidth" src="images/banniere_definir-projet.jpg" />
 </article>
 
 <article class="pure-g" id="defineProjectIntro">
-	<section class="pure-u-3-5">
+	<section class="pure-u-3-5 pure-u-lg-2-3">
 		<p class="noTopMargin">Développer sa propre entreprise par le biais d’une franchise est très sécurisant et permet de se développer professionnellement. Chaque franchisé devenant un membre à part entière de l’entreprise, il nous faut mieux vous connaître. Nous avons donc mis en place un petit questionnaire concernant votre profil. Une fois vos réponses envoyés, vous recevrez un mail contenant toutes les étapes pour devenir franchisé From-US.com.</p>
 		<p><strong>Que l'aventure commence !</strong></p>
 	</section>
-	<section class="pure-u-2-5" style="text-align: center">
-		<div><img src="images/definir-projet-intro.jpg" class="pure-img" style="max-width: 400px;" /></div>
+	<section class="pure-u-2-5 pure-u-lg-1-3" style="text-align: center">
+		<div><img src="images/definir-projet-intro.jpg" class="pure-img" /></div>
 	</section>
 </article>
 
-<article class="iconsWithDesc">
+<article>
 	<?php if (isset($_POST) && ($_POST)): ?>
 		<strong>Données reçues</strong><br />
 		Pays : <?php echo $_POST['pays']; ?><br />
@@ -343,59 +322,4 @@
 	</form>
 </article>
 
-<footer>
-	<div id="footerTop" class="pure-g">
-		<div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-			<img src="images/logo.png" />
-		</div>
-		<div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-			<nav>
-				<a href="" class="listTitle">Qui sommes-nous&nbsp;?</a>
-				<ul>
-					<li class="right-caret"><a href="#">Présentation de l'entreprise</a></li>
-				</ul>
-			</nav>
-			<nav>
-				<a href="#" class="listTitle">Devenir franchisé</a>
-				<ul>
-					<li class="right-caret"><a href="#">L'expérience franchisé</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-			<nav>
-				<a href="" class="listTitle">Notre implantation</a>
-				<ul>
-					<li class="right-caret"><a href="#">Où nous trouver</a></li>
-				</ul>
-			</nav>
-			<nav>
-				<a href="#" class="listTitle">Définir votre projet</a>
-				<ul>
-					<li class="right-caret"><a href="#">Votre projet nous intéresse</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-4">
-			<nav>
-				<a href="" class="listTitle">Nous contacter</a>
-			</nav>
-			<nav>
-				Suivez-nous sur :
-				<ul>
-					<li><a href="#">[IMG]</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-	<div id="footerBottom">
-		Copyright © From-US.com 2015
-	</div>
-</footer>
-
-<!-- CSS EXTERNES !-->
-<link rel="stylesheet" href="css/pure-min-with-responsive-grids.css"/>
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="stylesheet" href="css/responsive.css">
-</body>
-</html>
+<?php include('footer.php'); ?>

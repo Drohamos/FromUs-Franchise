@@ -24,9 +24,8 @@ article {
 article.fullWidth {
 	padding: 0;
 }
-img.fullWidth {
+.fullWidth {
 	width: 100%;
-	height: auto;
 }
 
 
@@ -125,11 +124,11 @@ article > header {
 .iconsWithDesc h3 {
 	margin-top: 0;
 }
-.iconsWithDesc h3, .iconsWithDesc p {
+.iconsWithDesc li h3, .iconsWithDesc li p {
 	margin-left: 120px;
 }
 
-.redTitle {
+.red {
 	color: #dc233c;
 }
 .listTitle {
@@ -138,6 +137,20 @@ article > header {
 .noTopMargin {
 	margin-top: 0;
 }
+.titleWithUnderline {
+	margin-bottom: 1.5em;
+	text-transform: uppercase;
+	position: relative;
+}
+.titleWithUnderline:before {
+	content: "";
+	position: absolute;
+	width: 20%;
+	height: 1px;
+	top: 1.5em;
+	left: 40%;
+	border-bottom: 1px solid black;
+}
 
 
 /****************************/
@@ -145,7 +158,6 @@ article > header {
 /****************************/
 
 .pure-img {
-	display: inline;
 }
 .pure-menu-heading {
 	padding: 0;
